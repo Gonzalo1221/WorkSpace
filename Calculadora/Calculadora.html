@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Trabajo!</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Calculadora</h1>
+
+    <div class="card">
+
+      <div class="card-header">
+
+
+        <table class="table">
+
+          <tr>
+            <th scope="row">#1</th>
+            <td> <input type="text" id="a" placeholder="Ingrese un valor"> </td>
+          </tr>
+          <tr>
+            <th scope="row">2#</th>
+            <td> <input type="text" id="b" placeholder="Ingrese un valor"> </td>
+
+          </tr>
+          <tr>
+            <th scope="row">Resultado</th>
+            <td> <input type="text" id="c" placeholder="Resultado a imprimir"> </td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">
+
+            <td><a href="# " class="btn btn-primary" onclick="suma('')"> + </a>
+
+              <a href="# " class="btn btn-success" onclick="resta('')"> - </a>
+
+              <a href="# " class="btn btn-warning" onclick="multiplicar('')"> * </a>
+
+              <a href="# " class="btn btn-danger" onclick="dividir('')"> / </a>
+            </td>
+
+            </th>
+
+          </tr>
+        </table>
+
+      </div>
+      
+    </div>
+
+    </tbody>
+    </table>
+  </div>
+
+
+  <!--<h1>
+  <a href="#" class="btn btn-primary" onclick="saludar('Gonzalo',5,7)">No Me Oprimas</a>
+
+  <p id="vim">
+  </p>
+  <h1>5</h1>
+  <h1>7</h1>
+
+  <a href="#" class="btn btn-primary" onclick="calcular('')">Sumar</a>
+  <p id="calcular"></p>-->
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+    crossorigin="anonymous"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+
+  <script src="js/app.js"></script>
+
+
+
+  <!--<script>
+    function saludar(nombre, numero1, numero2) {
+      //alert("Hello world! " + nombre);
+      const vim = document.getElementById("vim")
+      vim.innerHTML = "Hola " + nombre + "\n" + numero1 + "\n" + numero2
+      console.log('Hello este es un dato desde vim ' + vim.innerHTML)
+    }
+
+  </script>
+
+  <script>
+    function calcular(resultado) {
+      var x
+      x = 5+7
+      const calcular = document.getElementById("calcular")
+      calcular.innerHTML = "El resultado de 5 + 7 es " + (x)
+
+    }
+  </script>--->
+
+</body>
+
+</html>

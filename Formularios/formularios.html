@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios!</h1>
+
+    <diV class="container">
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Agregar a lista</h5>
+                <td> <input type="text" id="nombre" placeholder="Ingrese un nombre"> </td>
+                <br>
+                <br>
+                <button id="boton" class="btn btn-success" onclick="agragardato()"> añadir </button>
+
+            </div>
+        </div>
+
+
+
+        <br>
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Manejo de Lista</h5>
+                <td> <input type="text" id="dato" placeholder="Ingrese un nombre"> </td>
+                <br>
+                <br>
+                <button id="buscar" class="btn btn-success" onclick="buscardato()"> Buscar </button>
+                <button id="E.P.D" class="btn btn-warning" onclick="eliminarprimero()"> Eliminar primer dato </button>
+                <button id="E.U.D" class="btn btn-warning" onclick="eliminarultimo()"> Eliminar ultimo dato </button>
+                <button id="E.DU" class="btn btn-danger" onclick="eliminarunico()"> Eliminar dato unico </button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+        crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+
+    <!--<script> 
+    function buscardato() {
+
+            let Len = lista.length;
+
+            let text = "<ul>";
+            for (let i = 0; i < Len; i++) { text += "<li>" + lista[i] + "</li>"; } text += "</ul>";
+            document.getElementById("mostrar").innerHTML = text;
+        } 
+    </script>-->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
